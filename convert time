@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+	int h,m,s;
+	printf("enter time in h");
+	scanf("%d",&h);
+	m=h*60;
+	s=h*3600;
+	printf("print time in m %d",m);
+	printf("print time in s %d",s);
+	return 0;
+}
