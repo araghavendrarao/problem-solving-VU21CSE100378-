@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+    int raghu[50],count=0,ele,n,i;
+    printf("enter the range ");
+    scanf("%d",&n);
+    printf("enter the elements");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&raghu[i]);
+    }
+    printf("Enter the element for finding its occurence : ");
+    scanf("%d",&ele);
+    for (i=0;i<n;i++)
+    {
+        if (raghu[i]==ele)
+        {
+            count++;
+        }
+    }
+    printf("occurence of %d is %d time(s)",ele,count);
+}
