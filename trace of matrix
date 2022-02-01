@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+    int d2[10][10],i,j,rows,col,sum=0;
+    printf("enter the numbers of rows and columns");
+    scanf("%d%d",&rows,&col);
+    printf("enter the elements");
+    for(i=0;i<rows;i++)
+    {
+        for(j=0;j<col;j++)
+        {
+            scanf("%d",&d2[i][j]);
+        }
+    }
+    for(i=0;i<rows;i++)
+    {
+        sum=sum+d2[i][i];
+        printf("%d\n",sum);
+    }
+}
+    
