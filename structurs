@@ -1,0 +1,25 @@
+#include<stdio.h>
+struct student
+{
+    int rollNo;
+    char name[20];
+    int age;
+    float marks;
+};
+
+void main()
+{
+    // Assigning values to student structure
+    struct student s1={1234,"Prabhas",42,99.9};
+    struct student s2={5678,"Kane",54,90.3};
+    struct student s3={9876,"Dhoni",40,99};
+    // Assigning values to s2 using assignment operators
+    printf("Details of s1 : \n");
+    printf("\nRoll Number : %d",s3.rollNo);
+    printf("\nName : %s",s3.name);
+    printf("\nAge : %d",s3.age);
+    printf("\nMarks : %.2f",s3.marks);
+}
+ printf("Enter Roll Number, Name, Age, Marks of Student : "); 
+    scanf("%d %s %d %f",&s3.rollNo,s3.name,&s3.age,&s3.marks);
+    printf("Details of s2 : \
