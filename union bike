@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<string.h>
+union bike 
+{
+    char name[20];
+    float prize;
+    int milage;
+};
+int main()
+{
+    union bike data1;
+    union bike data2;
+    printf("bike  data1 details ");
+    strcpy(data1.name ,"honda");
+    printf("name %s\n",data1.name);
+    data1.prize=800000;
+    printf("prize  is %f\n",data1.prize);
+    data1.milage=18;
+    printf("age is%d\n",data1.milage);
+    printf("bike  data2 values ");
+    strcpy(data2.name ,"spunder +");
+    printf("name %s\n",data2.name);
+    data2.prize=88.00;
+    printf("prize  is %f\n",data2.prize);
+     data2.milage=18;
+    printf(" milage is %d\n",data2.milage);
+    return 0;
+}
