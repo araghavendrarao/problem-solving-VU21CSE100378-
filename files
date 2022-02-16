@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    int i;
+    char name[15];
+    FILE*fp;
+    fp=fopen("data1.txt","r");
+    printf("enter the integer");
+    scanf("%d",&i);
+    printf("enter your name");
+    scanf("%s",name);
+    fprintf(fp,"%d\n%s",i,name);
+    fclose(fp);
+}
