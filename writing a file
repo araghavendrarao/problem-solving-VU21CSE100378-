@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    int year,prize;
+    char name[20],model[20];
+    FILE*fp;
+    fp=fopen("D:\ car.txt","w");
+    printf("enter the car name");
+    scanf("%s",&name);
+    printf("enter the year");
+    scanf("%d",&year);
+    printf("enter the prize");
+    scanf("%d",&prize);
+    printf("car model");
+    scanf("%s",model);
+    fprintf(fp,"%s\n,%d\n,%d\n,%s\n",name,year,prize,model);
+    fclose(fp);
+    }
